@@ -4,18 +4,17 @@
         <script src="NTTData_Practice::js/test.js"></script>
         <css src="NTTData_Practice::css/test.css"/>
     </head>
-
     <referenceContainer name="content">
         <container name="productlists-container" as="productlist-container" label="Page Productlists" htmlTag="div" htmlClass="productlist-container">
             <block class="NTTData\Practice\Block\Test\ProductLists" name="productlist_test_productlists" template="NTTData_Practice::test/productlists.phtml" />
         </container>
         <referenceContainer name="productlists-container">
             <container name="header-container" as="header-container" label="header container" htmlTag="div" htmlClass="header-container">
-                <block class="NTTData\Practice\Block\Test\Lista\Header" name="header-list" template="NTTData_Practice::test/list/header_test_list_header.phtml" />
+                <block class="NTTData\Practice\Block\Test\Lista\Header" name="header-list" template="NTTData_Practice::test/list/header.phtml" />
             </container>
 
             <container name="products-container" as="product-container" label="product container" htmlTag="div" htmlClass="product-container">
-                <block class="NTTData\Practice\Block\Test\Lista\Products" name="products-list" template="NTTData_Practice::test/list/products_test_list_products.phtml" />
+                <block class="NTTData\Practice\Block\Test\Lista\Products" name="products-list" template="NTTData_Practice::test/list/products.phtml" />
             </container>
         </referenceContainer>
     </referenceContainer>
