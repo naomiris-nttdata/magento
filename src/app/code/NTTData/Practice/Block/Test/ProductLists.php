@@ -7,5 +7,8 @@ class ProductLists extends \Magento\Framework\View\Element\Template
 		parent::__construct($context);
 		
 	}
-	
+	public function getTitle()
+	{
+		return __("Store Privacy Policies");
+	}
 }
