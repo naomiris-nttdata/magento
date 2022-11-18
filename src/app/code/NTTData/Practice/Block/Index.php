@@ -1,12 +1,16 @@
 <?php
 namespace NTTData\Practice\Block;
+
+use Magento\Framework\View\Element\Template;
+use Magento\Framework\View\Element\Template\Context;
+
+
 class Index extends \Magento\Framework\View\Element\Template
 {    
-    protected $_productCollectionFactory;
-        
+       
     public function __construct(
-        \Magento\Backend\Block\Template\Context $context,        
-        \Magento\Catalog\Model\ResourceModel\Product\CollectionFactory $productCollectionFactory,        
+        \Magento\Backend\Block\Template\Context $context,       
+        \Magento\Catalog\Model\ResourceModel\Product\CollectionFactory $productCollectionFactory,  
         array $data = []
     )
     {    
@@ -18,7 +22,6 @@ class Index extends \Magento\Framework\View\Element\Template
     {
         $collection = $this->_productCollectionFactory->create();
         $collection->addAttributeToSelect('*');
-        $collection->setPageSize(10);
         return $collection;
     }
     
