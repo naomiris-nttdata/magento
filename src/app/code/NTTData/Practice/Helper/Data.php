@@ -34,6 +34,7 @@ class Data extends AbstractHelper
 	public function GetOrderFieldAttributeValue($storeId = null)
 	{
 		return $this->getConfigValue(self::XML_PATH_PRACTICE.'order_field', $storeId);
+
 	}
 
 }
