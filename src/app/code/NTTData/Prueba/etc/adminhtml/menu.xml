@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="NTTData_Prueba::prueba" title="NTTData" module="NTTData_Prueba" sortOrder="51" resource="NTTData_Prueba::prueba"/>
+        <add id="NTTData_Prueba::item" title="Employees grid" module="NTTData_Prueba" sortOrder="10" action="prueba/index/index" resource="NTTData_Prueba::item" parent="NTTData_Prueba::prueba"/>
+    </menu>
+</config>
