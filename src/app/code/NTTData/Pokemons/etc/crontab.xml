@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config>
+    <group id="default">
+        <job name="nttdata_pokemons_cron" instance="NTTData\Pokemons\Cron\Custom" method="pokemon">
+            <schedule>* */1 * * *</schedule>
+        </job>
+    </group>
+</config>

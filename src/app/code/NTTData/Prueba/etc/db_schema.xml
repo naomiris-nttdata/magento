@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="prueba_grid" resource="default" engine="innodb" comment="Company Table">
+        <column xsi:type="smallint" name="id" unsigned="false" nullable="false" identity="true" comment=" company ID"/>
+        <column xsi:type="varchar" name="employees_name" length="60" nullable="false" comment=" employees name"/>
+        <column xsi:type="varchar" name="employees_surname" length="60" nullable="false" comment=" employees surname"/>
+        <column xsi:type="varchar" name="employees_age" length="2" nullable="false" comment=" employees age"/>
+        <column xsi:type="varchar" name="type_employee" length="60" nullable="false" comment=" type of employee"/>
+        <column xsi:type="smallint" name="id_language" unsigned="false" nullable="true" comment=" type of employee"/>
+        <column xsi:type="smallint" name="id_designer" unsigned="false" nullable="true" comment=" type of employee"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="id"/>
+        </constraint>
+        <constraint xsi:type="foreign" referenceId="PRUEBA_GRID_LANGUAGE_LANGUAGE_LANGUAGE_ID" table="company" column="id_language" referenceTable="language" referenceColumn="language_id" />
+        <constraint xsi:type="foreign" referenceId="PRUEBA_GRID_DESIGNER_DESIGNER_DESIGNER_ID" table="company" column="id_designer" referenceTable="designer" referenceColumn="designer_id" />
+    </table>
+    <table name="designer" resource="default" engine="innodb" comment="Designer employees Table">
+        <column xsi:type="smallint" name="designer_id" unsigned="false" nullable="false" identity="true" comment=" designer ID"/>
+        <column xsi:type="varchar" name="type_designer" length="80" nullable="false" comment=" type of designer"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="designer_id"/>
+        </constraint>
+    </table>
+    <table name="language" resource="default" engine="innodb" comment="language Table">
+        <column xsi:type="smallint" name="language_id" unsigned="false" nullable="false" identity="true" comment=" Language ID"/>
+        <column xsi:type="varchar" name="name" length="80" nullable="false" comment="language name"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="language_id"/>
+        </constraint>
+    </table>
+</schema>
