@@ -342,6 +342,7 @@ return [
         'NTTData_Practice' => 1,
         'NTTData_Prueba' => 1,
         'NTTData_ServiceApi' => 1,
+        'NTTData_Company' => 1,
         'PayPal_Braintree' => 1,
         'PayPal_BraintreeGraphQl' => 1,
         'Temando_ShippingRemover' => 1,
