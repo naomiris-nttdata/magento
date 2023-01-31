@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+<head>
+        <css src="NTTData_PurchaseRegret::css/style.css"/>
+        <script src="NTTData_PurchaseRegret::js/ajax.js"></script>
+
+</head>
+    <referenceContainer name="content">
+        <block class="NTTData\PurchaseRegret\Block\Index\Index" name="form_index_index"  template="NTTData_PurchaseRegret::form.phtml"/>
+    </referenceContainer>
+    <body>
+    <referenceContainer name="header.container" remove="true"/>
+        <referenceBlock name="catalog.topnav" remove="true"/>
+        <referenceContainer name="footer-container" remove="true"/>
+    </body>
+</page>

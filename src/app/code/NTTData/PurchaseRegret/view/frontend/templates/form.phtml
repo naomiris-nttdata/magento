@@ -1,0 +1,68 @@
+<div class="step active-stepper" data-element="customer data-step" data-role="stepper">
+    <div class="row">
+        <div class="col-md-8">
+            <form name="addData" method="post" id="addData" class="formdata"
+                data-hasrequired="<?= $block->escapeHtmlAttr(__('* Required Fields')) ?>"
+                data-mage-init='{"validation":{}}'>
+                <fieldset class="fieldset">
+                    <legend class="legend"><span><?= $block->escapeHtmlAttr(__('Fill Detail')) ?></span></legend>
+                    <fieldset class="fieldset row">
+                        <div class="fields col-md-6">
+                            <div class="field name required">
+                                <label class="label" for="title"><span><?= $block->
+                                    escapeHtmlAttr(__('Order ID')) ?></span></label>
+                                <div class="control">
+                                    <input name="order_id" id="order_id" title="Order ID" value="" class="input-text" type="number"
+                                        data-validate="{'required':true, 'validate-digits':true}">
+                                </div>
+                            </div>
+                            <div class="field name required">
+                                <label class="label" for="title"><span><?= $block->
+                                    escapeHtmlAttr(__('Name')) ?></span></label>
+                                <div class="control">
+                                    <input name="name" id="name" title="Name" value="" class="input-text" type="text"
+                                        data-validate="{'required':true}">
+                                </div>
+                            </div>
+                            <div class="field name required">
+                                <label class="label" for="title"><span><?= $block->escapeHtmlAttr(__('Surname')) ?></span></label>
+                                <div class="control">
+                                    <input name="surname" id="surname" title="Surname" value="" class="input-text"
+                                        type="text" data-validate="{'required':true}">
+                                </div>
+                            </div>
+                            <div class="field name required">
+                                <label class="label" for="title"><span><?= $block->escapeHtmlAttr(__('Email')) ?></span></label>
+                                <div class="control">
+                                    <input name="email" id="email" title="Email" value="" class="input-text"
+                                        type="text" data-validate="{'required':true,'validate-email':true}">
+                                </div>
+                            </div>
+                            <div class="field name ">  
+                            <label class="label" for="title"><span><?= $block->escapeHtmlAttr(__('Comment')) ?></span></label> 
+                                <textarea name="comment" id="comment" value="" rows="6" cols="40"></textarea>
+                            </div>   
+                        </div>
+                    </fieldset>
+                </fieldset>
+                <div class="actions-toolbar">
+                    <div class="primary">
+                        <button type="submit" id="btn" class="action submit primary" title="Send"><span><?= $block->
+                            escapeHtmlAttr(__('Send')) ?></span></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="box" style="display:none">
+    <div class="res-form">
+        <p id="message"><?= $block->escapeHtmlAttr(__(''))?></p>
+
+        <div class="btn-goback">
+            <a href="https://magento.test"><span><?= $block-> escapeHtmlAttr(__('Go back')) ?></span></a>
+        </div>
+    </div>
+</div>
+
+ 
