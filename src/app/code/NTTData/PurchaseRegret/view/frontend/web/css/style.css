@@ -1,0 +1,127 @@
+body {
+    background-color: #000031;
+    background: radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent) 15px 15px, linear-gradient(#81d4dd 1.2000000000000002px, transparent 1.2000000000000002px) 0 -0.6000000000000001px, linear-gradient(90deg, #81d4dd 1.2000000000000002px, #e5e5f7 1.2000000000000002px) -0.6000000000000001px 0;
+    background-size: 30px 30px, 30px 30px, 15px 15px, 15px 15px;
+}
+
+.copyright {
+    display: none;
+}
+
+.formdata {
+    background-color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 50px;
+    margin: auto;
+    max-width: 400px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+}
+
+.actions-toolbar>.primary .action:last-child,
+.actions-toolbar>.secondary .action:last-child {
+    width: 400px;
+    background-color: #243c70;
+}
+
+.col-md-8 {
+    margin-top: 44px;
+}
+
+.action.primary,
+.action-primary {
+    width: 418px;
+}
+
+.form-message {
+    background-color: #27ad3b;
+    color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 50px;
+    font-size: 20px;
+    margin: auto;
+    max-width: 400px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+
+#error-message {
+    background-color: #e41a1a;
+    font-size: 10px;
+    color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 50px;
+    margin: auto;
+    max-width: 400px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+}
+
+.btn-goback {
+    background-color: #080808;
+    color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    position: relative;
+    left: -6px;
+    top: 311px;
+    background-color: #243c70;
+    text-align: center;
+}
+.btn-goback:hover{
+    text-decoration: none;
+}
+
+.btn-goback a{
+    color: #ffffff;
+}
+
+#message{
+    text-align: center;
+    padding-top: 157px;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+.modal-popup.confirm .modal-inner-wrap {
+    max-width: 37rem;
+    height: 59rem;
+}
+
+.modal-popup .modal-content {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 9rem;
+    text-align: center;
+
+}
+
+.box{
+    background-color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 50px;
+    margin: auto;
+    max-width: 400px;
+    height: 580px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+}
+
+
