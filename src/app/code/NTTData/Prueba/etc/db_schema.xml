@@ -8,6 +8,17 @@
         <column xsi:type="varchar" name="type_employee" length="60" nullable="false" comment=" type of employee"/>
         <column xsi:type="smallint" name="id_language" unsigned="false" nullable="true" comment=" type of employee"/>
         <column xsi:type="smallint" name="id_designer" unsigned="false" nullable="true" comment=" type of employee"/>
+        <column xsi:type="varchar" name="address" length="60" nullable="false" comment=" address"/>
+        <column xsi:type="int" name="phone_number" nullable="false" comment=" phone number"/>
+        <column xsi:type="varchar" name="family_group" length="255" nullable="false" comment=" Family group"/>
+        <column xsi:type="smallint" name="insurance_id" unsigned="false" nullable="true" comment=" insurance id"/>
+        <column xsi:type="varchar" name="academic_formation" length="255" nullable="false" comment=" Academic formation"/>
+        <column xsi:type="date" name="start_date"  nullable="false" comment=" start working date"/>
+        <column xsi:type="date" name="finish_date"  nullable="true" comment=" finish working date"/>
+        <column xsi:type="varchar" name="working_modality" length="255" nullable="false" comment="working modality"/>
+        <column xsi:type="varchar" name="seniority" length="255" nullable="false" comment="seniority"/>
+        <column xsi:type="varchar" name="type_of_contract" length="255" nullable="false" comment="type of contract"/>
+        <column xsi:type="text" name="holiday_days"   comment="Amount of days"/>
         <constraint xsi:type="primary" referenceId="PRIMARY">
             <column name="id"/>
         </constraint>
@@ -26,6 +37,14 @@
         <column xsi:type="varchar" name="name" length="80" nullable="false" comment="language name"/>
         <constraint xsi:type="primary" referenceId="PRIMARY">
             <column name="language_id"/>
+        </constraint>
+    </table>
+     <table name="insurance" resource="default" engine="innodb" comment="Insurance Table">
+        <column xsi:type="smallint" name="insurance_id" unsigned="false" nullable="false" identity="true" comment=" Insurance ID"/>
+        <column xsi:type="varchar" name="provider" length="80" nullable="false" comment="provider name"/>
+        <column xsi:type="varchar" name="plan" length="80" nullable="false" comment="plan name"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="insurance_id"/>
         </constraint>
     </table>
 </schema>

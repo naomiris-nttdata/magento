@@ -338,7 +338,6 @@ return [
         'Klarna_Kp' => 1,
         'Klarna_Onsitemessaging' => 1,
         'Klarna_KpGraphQl' => 1,
-        'NTTData_Company' => 1,
         'NTTData_Practice' => 1,
         'NTTData_Prueba' => 1,
         'PayPal_Braintree' => 1,
